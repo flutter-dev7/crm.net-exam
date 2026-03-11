@@ -94,10 +94,10 @@ public class ProgressBookService : IProgressBookService
                 if (res3 == false)
                     return "Group has no timetable";
 
-                if (progressBook.Grade < 1 && progressBook.Grade > 100)
+                if (progressBook.Grade < 1 || progressBook.Grade > 100)
                     return "Grade must be between 1 and 100";
 
-                if (progressBook.LateMinutes <= 0 && progressBook.LateMinutes >= 120)
+                if (progressBook.LateMinutes <= 0 || progressBook.LateMinutes >= 120)
                     return "LateMinutes must be between 0 and 120";
 
                 string sql = @"

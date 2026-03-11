@@ -87,9 +87,9 @@ public class StudentGroupService : IStudentGroupService
                 return res == 0 ? "Student Not Found In This Group" : "Student Deleted From Group Successfully";
             }
         }
-        catch (System.Exception)
+        catch (System.Exception ex)
         {
-
+            Console.WriteLine($"Error: {ex.Message}");
             throw;
         }
     }

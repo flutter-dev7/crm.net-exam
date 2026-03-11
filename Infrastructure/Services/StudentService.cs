@@ -81,8 +81,40 @@ public class StudentService : IStudentService
         }
     }
 
-    
-    
+    public async Task<int> GetAttendancePercentageAsync(int studentId)
+    {
+        try
+        {
+            using (NpgsqlConnection connection = context.GetConnection())
+            {
+                connection.Open();
+
+                string sql = @"
+                SELECT COUNT(*) FROM ProgressBook
+                WHERE StudentId = @studentId";
+
+                var total = await connection.ExecuteScalarAsync<int>(sql, new { studentId });
+
+                if (total == 0)
+                    return 0;
+
+                string attendedSql = @"
+                SELECT COUNT(*) FROM ProgressBook
+                WHERE StudentId = @studentId AND IsAttended = TRUE";
+
+                var res = await connection.ExecuteScalarAsync<int>(attendedSql, new { studentId });
+
+                int percent = res / total * 100;
+
+                return percent;
+            }
+        }
+        catch (System.Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+            throw;
+        }
+    }
 
     public async Task<string> AddStudentAsync(Student student)
     {

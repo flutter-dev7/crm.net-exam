@@ -30,6 +30,12 @@ public class StudentController
         return await service.GetAverageGradeAsync(id);
     }
 
+    [HttpGet("{studentId:int}/attendance")]
+    public async Task<int> GetAttendancePercentageAsync(int studentId)
+    {
+        return await service.GetAttendancePercentageAsync(studentId);
+    }
+
     [HttpPost]
     public async Task<string> AddStudentAsync(Student student)
     {

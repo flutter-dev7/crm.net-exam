@@ -40,3 +40,4 @@ C:\Users\Ismoil\OneDrive\Desktop\Programming\.Net\month1\week1\exam\crm-task\Web
 C:\Users\Ismoil\OneDrive\Desktop\Programming\.Net\month1\week1\exam\crm-task\WebApi\obj\Debug\net10.0\WebApi.pdb
 C:\Users\Ismoil\OneDrive\Desktop\Programming\.Net\month1\week1\exam\crm-task\WebApi\obj\Debug\net10.0\WebApi.genruntimeconfig.cache
 C:\Users\Ismoil\OneDrive\Desktop\Programming\.Net\month1\week1\exam\crm-task\WebApi\obj\Debug\net10.0\ref\WebApi.dll
+C:\Users\Ismoil\OneDrive\Desktop\Programming\.Net\month1\week1\exam\crm-task\WebApi\obj\Debug\net10.0\WebApi.sourcelink.json
