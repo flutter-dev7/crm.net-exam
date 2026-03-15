@@ -9,10 +9,8 @@ namespace WebApi.Controllers;
 
 [ApiController]
 [Route("api/groups")]
-public class GroupController
+public class GroupController(GroupService service)
 {
-    private readonly GroupService service = new GroupService();
-
     [HttpGet]
     public async Task<List<Group>> GetAllGroupsAsync()
     {

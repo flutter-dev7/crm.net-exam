@@ -8,10 +8,8 @@ namespace WebApi.Controllers;
 
 [ApiController]
 [Route("api/")]
-public class ProgressBookController
+public class ProgressBookController(IProgressBookService service)
 {
-    private readonly IProgressBookService service = new ProgressBookService();
-
     [HttpGet("students/{studentId:int}/progress")]
     public async Task<List<ProgressBook>> GetStudentProgressBook(int studentId)
     {

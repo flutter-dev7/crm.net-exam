@@ -7,10 +7,8 @@ using Npgsql;
 
 namespace Infrastructure.Services;
 
-public class TimeTableService : ITimeTableService
+public class TimeTableService(DataContext context) : ITimeTableService
 {
-    private readonly DataContext context = new();
-
     public async Task<List<TimeTable>> GetTimeTableByGroupIdAsync(int groupId)
     {
         try
@@ -18,7 +16,6 @@ public class TimeTableService : ITimeTableService
             using (NpgsqlConnection connection = context.GetConnection())
             {
                 connection.Open();
-
                 string sql = @"
                 SELECT * FROM TimeTable
                 WHERE GroupId = @groupId";

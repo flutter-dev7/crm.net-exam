@@ -8,10 +8,8 @@ namespace WebApi.Controllers;
 
 [ApiController]
 [Route("api/groups")]
-public class StudentGroupController
+public class StudentGroupController(IStudentGroupService service)
 {
-    private readonly IStudentGroupService service = new StudentGroupService();
-
     [HttpGet("{groupId:int}/students")]
     public async Task<List<Student>> GetStudentsByGroupIdAsync(int groupId)
     {

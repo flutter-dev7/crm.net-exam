@@ -8,10 +8,8 @@ namespace WebApi.Controllers;
 
 [ApiController]
 [Route("api/students")]
-public class StudentController
+public class StudentController(StudentService service)
 {
-    private readonly StudentService service = new StudentService();
-
     [HttpGet]
     public async Task<List<Student>> GetAllStudentsAsync()
     {
@@ -31,7 +29,7 @@ public class StudentController
     }
 
     [HttpGet("{studentId:int}/attendance")]
-    public async Task<int> GetAttendancePercentageAsync(int studentId)
+    public async Task<double> GetAttendancePercentageAsync(int studentId)
     {
         return await service.GetAttendancePercentageAsync(studentId);
     }

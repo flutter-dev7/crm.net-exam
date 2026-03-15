@@ -7,10 +7,8 @@ using Npgsql;
 
 namespace Infrastructure.Services;
 
-public class ProgressBookService : IProgressBookService
+public class ProgressBookService(DataContext context) : IProgressBookService
 {
-    private readonly DataContext context = new();
-
     public async Task<List<ProgressBook>> GetGroupProgressBook(int groupId)
     {
         try

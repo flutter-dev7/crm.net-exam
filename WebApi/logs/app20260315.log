@@ -1,0 +1,86 @@
+2026-03-15 11:16:57.923 +05:00 [INF] Now listening on: http://localhost:5243
+2026-03-15 11:16:57.978 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-15 11:16:57.981 +05:00 [INF] Hosting environment: Development
+2026-03-15 11:16:57.984 +05:00 [INF] Content root path: C:\Users\Ismoil\OneDrive\Desktop\Programming\.Net\month1\week1\exam\crm-task\WebApi
+2026-03-15 11:17:05.344 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5243/ - null null
+2026-03-15 11:17:05.427 +05:00 [INF] Request started: GET / at "2026-03-15T11:17:05.4250347+05:00"
+2026-03-15 11:17:05.438 +05:00 [WRN] Failed to determine the https port for redirect.
+2026-03-15 11:17:05.442 +05:00 [INF] Request finished: GET / responded 404 in 16.4898 ms
+2026-03-15 11:17:05.466 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5243/ - 404 0 null 126.0436ms
+2026-03-15 11:17:05.474 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5243/, Response status code: 404
+2026-03-15 11:17:08.616 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5243/swagger/index.html - null null
+2026-03-15 11:17:08.740 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5243/swagger/index.html - 304 null null 125.108ms
+2026-03-15 11:17:08.757 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5243/swagger/swagger-ui.css - null null
+2026-03-15 11:17:08.757 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5243/swagger/index.css - null null
+2026-03-15 11:17:08.758 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5243/swagger/swagger-ui-bundle.js - null null
+2026-03-15 11:17:08.785 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5243/swagger/swagger-ui.css - 304 null null 28.424ms
+2026-03-15 11:17:08.785 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5243/swagger/index.css - 304 null null 27.8006ms
+2026-03-15 11:17:08.786 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5243/swagger/swagger-ui-bundle.js - 304 null null 27.4728ms
+2026-03-15 11:17:08.800 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5243/swagger/index.js - null null
+2026-03-15 11:17:08.803 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5243/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-15 11:17:08.810 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5243/swagger/index.js - 304 null null 10.5811ms
+2026-03-15 11:17:08.829 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5243/swagger/swagger-ui-standalone-preset.js - 304 null null 26.1899ms
+2026-03-15 11:17:08.924 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5243/swagger/v1/swagger.json - null null
+2026-03-15 11:17:09.172 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5243/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 248.2024ms
+2026-03-15 11:17:14.701 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5243/api/groups/2 - null null
+2026-03-15 11:17:14.712 +05:00 [INF] Request started: GET /api/groups/2 at "2026-03-15T11:17:14.7119772+05:00"
+2026-03-15 11:17:14.721 +05:00 [INF] Executing endpoint 'WebApi.Controllers.GroupController.GetGroupByIdAsync (WebApi)'
+2026-03-15 11:17:14.769 +05:00 [INF] Route matched with {action = "GetGroupById", controller = "Group"}. Executing controller action with signature System.Threading.Tasks.Task`1[Domain.Entities.Group] GetGroupByIdAsync(Int32) on controller WebApi.Controllers.GroupController (WebApi).
+2026-03-15 11:17:16.050 +05:00 [INF] Группа с Id = 2 успешно получена
+2026-03-15 11:17:16.064 +05:00 [INF] Executing ObjectResult, writing value of type 'Domain.Entities.Group'.
+2026-03-15 11:17:16.088 +05:00 [INF] Executed action WebApi.Controllers.GroupController.GetGroupByIdAsync (WebApi) in 1305.7625ms
+2026-03-15 11:17:16.092 +05:00 [INF] Executed endpoint 'WebApi.Controllers.GroupController.GetGroupByIdAsync (WebApi)'
+2026-03-15 11:17:16.095 +05:00 [INF] Request finished: GET /api/groups/2 responded 200 in 1383.8551 ms
+2026-03-15 11:17:16.101 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5243/api/groups/2 - 200 null application/json; charset=utf-8 1399.9042ms
+2026-03-15 11:46:36.666 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5243/api/groups - application/json 83
+2026-03-15 11:46:36.670 +05:00 [INF] Request started: POST /api/groups at "2026-03-15T11:46:36.6702588+05:00"
+2026-03-15 11:46:36.671 +05:00 [INF] Executing endpoint 'WebApi.Controllers.GroupController.AddGroupAsync (WebApi)'
+2026-03-15 11:46:36.684 +05:00 [INF] Route matched with {action = "AddGroup", controller = "Group"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] AddGroupAsync(Domain.Entities.Group) on controller WebApi.Controllers.GroupController (WebApi).
+2026-03-15 11:46:36.733 +05:00 [INF] Соединение с базой открыто
+2026-03-15 11:46:36.749 +05:00 [INF] Группа успешно создана: AI Learning
+2026-03-15 11:46:36.753 +05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-15 11:46:36.755 +05:00 [INF] Executed action WebApi.Controllers.GroupController.AddGroupAsync (WebApi) in 68.919ms
+2026-03-15 11:46:36.758 +05:00 [INF] Executed endpoint 'WebApi.Controllers.GroupController.AddGroupAsync (WebApi)'
+2026-03-15 11:46:36.759 +05:00 [INF] Request finished: POST /api/groups responded 200 in 89.4855 ms
+2026-03-15 11:46:36.763 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5243/api/groups - 200 null text/plain; charset=utf-8 96.3166ms
+2026-03-15 12:32:07.892 +05:00 [INF] Application is shutting down...
+2026-03-15 12:32:14.451 +05:00 [INF] Now listening on: http://localhost:5243
+2026-03-15 12:32:14.475 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-15 12:32:14.476 +05:00 [INF] Hosting environment: Development
+2026-03-15 12:32:14.476 +05:00 [INF] Content root path: C:\Users\Ismoil\OneDrive\Desktop\Programming\.Net\month1\week1\exam\crm-task\WebApi
+2026-03-15 12:32:27.250 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5243/api/groups - application/json 89
+2026-03-15 12:32:27.290 +05:00 [INF] Request started: POST /api/groups at "2026-03-15T12:32:27.2889822+05:00"
+2026-03-15 12:32:27.295 +05:00 [WRN] Failed to determine the https port for redirect.
+2026-03-15 12:32:27.296 +05:00 [INF] Executing endpoint 'WebApi.Controllers.GroupController.AddGroupAsync (WebApi)'
+2026-03-15 12:32:27.316 +05:00 [INF] Route matched with {action = "AddGroup", controller = "Group"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] AddGroupAsync(Domain.Entities.Group) on controller WebApi.Controllers.GroupController (WebApi).
+2026-03-15 12:32:27.355 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-03-15 12:32:27.382 +05:00 [INF] Executed action WebApi.Controllers.GroupController.AddGroupAsync (WebApi) in 60.6063ms
+2026-03-15 12:32:27.395 +05:00 [INF] Executed endpoint 'WebApi.Controllers.GroupController.AddGroupAsync (WebApi)'
+2026-03-15 12:32:27.396 +05:00 [INF] Request finished: POST /api/groups responded 400 in 107.8771 ms
+2026-03-15 12:32:27.400 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5243/api/groups - 400 null application/problem+json; charset=utf-8 151.3306ms
+2026-03-15 12:33:28.443 +05:00 [INF] Application is shutting down...
+2026-03-15 12:33:33.952 +05:00 [INF] Now listening on: http://localhost:5243
+2026-03-15 12:33:33.975 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-15 12:33:33.976 +05:00 [INF] Hosting environment: Development
+2026-03-15 12:33:33.976 +05:00 [INF] Content root path: C:\Users\Ismoil\OneDrive\Desktop\Programming\.Net\month1\week1\exam\crm-task\WebApi
+2026-03-15 12:33:37.052 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5243/api/groups - application/json 89
+2026-03-15 12:33:37.093 +05:00 [INF] Request started: POST /api/groups at "2026-03-15T12:33:37.0916379+05:00"
+2026-03-15 12:33:37.097 +05:00 [WRN] Failed to determine the https port for redirect.
+2026-03-15 12:33:37.099 +05:00 [INF] Executing endpoint 'WebApi.Controllers.GroupController.AddGroupAsync (WebApi)'
+2026-03-15 12:33:37.120 +05:00 [INF] Route matched with {action = "AddGroup", controller = "Group"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] AddGroupAsync(Domain.Entities.Group) on controller WebApi.Controllers.GroupController (WebApi).
+2026-03-15 12:33:37.156 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-03-15 12:33:37.182 +05:00 [INF] Executed action WebApi.Controllers.GroupController.AddGroupAsync (WebApi) in 57.6397ms
+2026-03-15 12:33:37.194 +05:00 [INF] Executed endpoint 'WebApi.Controllers.GroupController.AddGroupAsync (WebApi)'
+2026-03-15 12:33:37.195 +05:00 [INF] Request finished: POST /api/groups responded 400 in 103.3464 ms
+2026-03-15 12:33:37.198 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5243/api/groups - 400 null application/problem+json; charset=utf-8 147.3943ms
+2026-03-15 12:44:52.115 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5243/api/groups - application/json 83
+2026-03-15 12:44:52.120 +05:00 [INF] Request started: POST /api/groups at "2026-03-15T12:44:52.1202427+05:00"
+2026-03-15 12:44:52.122 +05:00 [INF] Executing endpoint 'WebApi.Controllers.GroupController.AddGroupAsync (WebApi)'
+2026-03-15 12:44:52.124 +05:00 [INF] Route matched with {action = "AddGroup", controller = "Group"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] AddGroupAsync(Domain.Entities.Group) on controller WebApi.Controllers.GroupController (WebApi).
+2026-03-15 12:44:52.302 +05:00 [INF] Соединение с базой открыто
+2026-03-15 12:44:52.400 +05:00 [INF] Группа успешно создана: AI Learning
+2026-03-15 12:44:52.407 +05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-15 12:44:52.409 +05:00 [INF] Executed action WebApi.Controllers.GroupController.AddGroupAsync (WebApi) in 282.6168ms
+2026-03-15 12:44:52.412 +05:00 [INF] Executed endpoint 'WebApi.Controllers.GroupController.AddGroupAsync (WebApi)'
+2026-03-15 12:44:52.413 +05:00 [INF] Request finished: POST /api/groups responded 200 in 293.0433 ms
+2026-03-15 12:44:52.415 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5243/api/groups - 200 null text/plain; charset=utf-8 300.1906ms

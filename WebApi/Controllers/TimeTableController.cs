@@ -8,10 +8,8 @@ namespace WebApi.Controllers;
 
 [ApiController]
 [Route("api/")]
-public class TimeTableController
+public class TimeTableController(ITimeTableService service)
 {
-    private readonly ITimeTableService service = new TimeTableService();
-
     [HttpGet("groups/{groupId:int}/timetable")]
     public async Task<List<TimeTable>> GetTimeTableByGroupIdAsync(int groupId)
     {

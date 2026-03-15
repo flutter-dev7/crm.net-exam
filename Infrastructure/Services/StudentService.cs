@@ -7,10 +7,8 @@ using Npgsql;
 
 namespace Infrastructure.Services;
 
-public class StudentService : IStudentService
+public class StudentService(DataContext context) : IStudentService
 {
-    private readonly DataContext context = new();
-
     public async Task<List<Student>> GetAllStudentsAsync()
     {
         try
@@ -81,7 +79,7 @@ public class StudentService : IStudentService
         }
     }
 
-    public async Task<int> GetAttendancePercentageAsync(int studentId)
+    public async Task<double> GetAttendancePercentageAsync(int studentId)
     {
         try
         {
@@ -104,7 +102,7 @@ public class StudentService : IStudentService
 
                 var res = await connection.ExecuteScalarAsync<int>(attendedSql, new { studentId });
 
-                int percent = res / total * 100;
+                double percent = (double)res / total * 100;
 
                 return percent;
             }

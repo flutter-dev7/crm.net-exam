@@ -7,10 +7,8 @@ using Npgsql;
 
 namespace Infrastructure.Services;
 
-public class StudentGroupService : IStudentGroupService
+public class StudentGroupService(DataContext context) : IStudentGroupService
 {
-    private readonly DataContext context = new();
-
     public async Task<List<Student>> GetStudentsByGroupIdAsync(int groupId)
     {
         try
